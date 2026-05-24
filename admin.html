@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>ADMIN</h2>
+
+<button onclick="logout()">Sair</button>
+
+</div>
+
+<div class="main">
+
+<div class="top">
+
+<h1>Painel Administrativo</h1>
+
+</div>
+
+<div class="cards">
+
+<div class="dashboard-card">
+<h3>Total de Inscritos</h3>
+<p id="total">0</p>
+</div>
+
+<div class="dashboard-card">
+<h3>Pagamentos Pendentes</h3>
+<p id="pendentes">0</p>
+</div>
+
+</div>
+
+<div class="table-box">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nome</th>
+<th>Telefone</th>
+<th>Curso</th>
+<th>Pagamento</th>
+<th>Ações</th>
+</tr>
+
+</thead>
+
+<tbody id="tabela"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+</html>

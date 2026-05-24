@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chongoene Computer's Training Center</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo-area">
+<img src="image/logotipo.png" class="logo">
+<h2>Chongoene Computer's Training Center</h2>
+</div>
+
+<nav>
+<a href="#cursos">Cursos</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#inscricao">Inscrição</a>
+<a href="login.html" class="admin-btn">Admin</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-text">
+
+<h1>
+Transforme o Seu Futuro com Tecnologia
+</h1>
+
+<p>
+Cursos profissionais de Informática, Inglês e Programação Web.
+</p>
+
+<div class="hero-buttons">
+<a href="#inscricao" class="btn-primary">Inscrever-se</a>
+<a href="#cursos" class="btn-secondary">Ver Cursos</a>
+</div>
+
+</div>
+
+<div class="hero-image">
+<img src="image/banner.jpg">
+</div>
+
+</div>
+
+</section>
+
+<!-- ESTATÍSTICAS -->
+
+<section class="stats">
+
+<div class="stat-box">
+<h2>500+</h2>
+<p>Estudantes</p>
+</div>
+
+<div class="stat-box">
+<h2>3</h2>
+<p>Cursos Profissionais</p>
+</div>
+
+<div class="stat-box">
+<h2>95%</h2>
+<p>Satisfação</p>
+</div>
+
+</section>
+
+<!-- CURSOS -->
+
+<section id="cursos" class="section">
+
+<h2 class="section-title">Nossos Cursos</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>Informática Básica</h3>
+
+<p>
+Windows, Word, Excel, PowerPoint e Internet.
+</p>
+
+<h4>1.500 MT</h4>
+
+<span>+500 MT Certificado opcional</span>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🌍</div>
+
+<h3>Curso de Inglês</h3>
+
+<p>
+Do básico ao intermédio em 3 níveis.
+</p>
+
+<h4>1.000 MT</h4>
+
+<span>+500 MT Certificado opcional</span>
+
+</div>
+
+<div class="card">
+
+<div class="icon">👨‍💻</div>
+
+<h3>Programação Web</h3>
+
+<p>
+HTML, CSS e JavaScript do zero.
+</p>
+
+<h4>1.200 MT</h4>
+
+<span>+500 MT Certificado opcional</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFÍCIOS -->
+
+<section id="beneficios" class="benefits">
+
+<h2 class="section-title">Por que escolher-nos?</h2>
+
+<div class="benefit-grid">
+
+<div class="benefit-card">
+✅ Aulas práticas
+</div>
+
+<div class="benefit-card">
+✅ Professores dedicados
+</div>
+
+<div class="benefit-card">
+✅ Ambiente profissional
+</div>
+
+<div class="benefit-card">
+✅ Certificado
+</div>
+
+</div>
+
+</section>
+
+<!-- INSCRIÇÃO -->
+
+<section id="inscricao" class="section">
+
+<h2 class="section-title">Faça sua Inscrição</h2>
+
+<div class="form-container">
+
+<input type="text" id="nome" placeholder="Nome completo">
+
+<input type="text" id="telefone" placeholder="Telefone">
+
+<select id="curso">
+
+<option value="">Escolher curso</option>
+
+<option>Informática Básica</option>
+
+<option>Curso de Inglês</option>
+
+<option>Programação Web</option>
+
+</select>
+
+<select id="nivel">
+
+<option value="">Nível (Inglês)</option>
+
+<option>Básico I</option>
+
+<option>Básico II</option>
+
+<option>Intermédio</option>
+
+</select>
+
+<select id="metodo" onchange="mostrarNumero()">
+
+<option value="">Método de pagamento</option>
+
+<option>M-Pesa</option>
+
+<option>e-Mola</option>
+
+<option>Banco</option>
+
+</select>
+
+<div id="numeroPagamento" class="pagamento-box"></div>
+
+<button onclick="inscrever()" class="submit-btn">
+FINALIZAR INSCRIÇÃO
+</button>
+
+</div>
+
+<div id="resposta"></div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-content">
+
+<div>
+<h3>Contactos</h3>
+<p>📞 870 569 900</p>
+<p>📞 871 176 035</p>
+</div>
+
+<div>
+<h3>Localização</h3>
+<p>📍 Chongoene - Reprografia Gigabyte</p>
+</div>
+
+<div>
+<h3>Estado</h3>
+<p class="open">🟢 Inscrições Abertas</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 Chongoene Computer's Training Center
+</p>
+
+</footer>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
